@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Texas Hold'em Poker</title>
+
+
+    <style>
+        #heading {
+            margin-top: 10%;
+            position: relative;
+            text-align: center;
+            font-size: 45px;
+        }
+
+        .button-container {
+            padding-left: 30%;
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            flex-flow: column;
+
+        }
+
+        .coin-container {
+            height: 700px;
+            width: 150px;
+            background-color: green;
+
+        }
+
+        .coin {
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            border-radius: 50%;
+            color: black;
+            text-align: center;
+        }
+
+        .coin-container:hover .coin {
+            animation: flip 1s ease-in-out forwards 10 alternate;
+
+        }
+
+        @keyframes flip {
+            25% {
+                transform: translateY(150px);
+            }
+
+            50% {
+                transform: translateY(300px);
+                background-color: black;
+            }
+
+            75% {
+                transform: translateY(450px);
+                background-color: black;
+            }
+
+            100% {
+                transform: translateY(600px);
+                background-color: red;
+            }
+        }
+
+        a {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="coin-container" style="float: left;">
+        <div class="coin"></div>
+    </div>
+    <div class="coin-container" style="float: right;">
+        <div class="coin"></div>
+    </div>
+    <div id="heading">
+        <h1>Texas Holdem Poker</h1>
+        <h2>Made by Team 2</h2>
+    </div>
+
+    <div class="button-container">
+        <a href="gametable.html" class="buttonone">Play</a><br><br>
+        <a href="rules.html" class="buttonone">Rules</a><br><br>		
+        <a href="summary.html" class="buttonone">Summary</a>
+    </div>
+
+</body>
+
+</html>

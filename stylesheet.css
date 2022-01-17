@@ -1,0 +1,64 @@
+body {
+	background-color: #006400;
+	font-family: 'Rye', cursive;
+	color: white;
+}
+
+.topleft {
+	position: relative;
+	top: 8px;
+	left: 16px;
+	font-size: 22px;
+}
+
+.heading {
+	position: relative;
+	text-align: center;
+	font-size: 45px;
+	text-decoration: underline;
+}
+
+.size {
+	text-align: center;
+	height: 500px;
+	line-height: 40px;
+	list-style-position: inside;
+	font-size: 20px;
+}
+
+.size ul {
+	line-height: 1.5;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.button-containerone {
+	width: 190px;
+	display: inline-block;
+	justify-content: center;
+	flex-flow: column;
+}
+
+.buttonone {
+	background-color: red;
+	padding: 20px 30px;
+	text-align: center;
+	display: inline-block;
+	font-size: 18px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+.buttonone:hover {
+	background-color: white;
+}
+
+a.buttonone {
+	-webkit-appearance: button;
+	-moz-appearance: button;
+	appearance: button;
+
+	text-decoration: none;
+	color: initial;
+}

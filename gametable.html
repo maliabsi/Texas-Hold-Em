@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="stylesheet.css" />
+	<title>Texas Hold'em Poker</title>
+
+	<style>
+		h1 {
+			padding-bottom: 5%;
+			text-align: center;
+		}
+
+		#circle-container {
+			display: flex;
+			float: left;
+			flex-direction: column;
+			padding-block: 10px;
+		}
+
+		#pot {
+			height: 150px;
+			width: 150px;
+			background-color: orange;
+			border-radius: 50%;
+			color: black;
+			text-align: center;
+		}
+
+		#call {
+			height: 150px;
+			width: 150px;
+			background-color: yellow;
+			border-radius: 50%;
+			color: black;
+			text-align: center;
+		}
+
+		#personal-money {
+			height: 150px;
+			width: 150px;
+			background-color: red;
+			border-radius: 50%;
+			color: black;
+			text-align: center;
+		}
+
+		.card-container-opponent {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			padding-left: 15%;
+			padding-bottom: 1.5%;
+
+		}
+
+		#card-container-5 {
+			display: flex;
+			flex-direction: row;
+			padding-left: 30%;
+			padding-bottom: 1.5%;
+		}
+
+		.card-container-2 {
+			display: flex;
+			flex-direction: row;
+			margin: 5px
+		}
+
+		.card {
+			width: 100px;
+			height: 150px;
+			border: 1px solid black;
+			background-color: white;
+			color: black;
+			text-align: center;
+			transition: .5s ease-in;
+		}
+
+		.card:hover {
+			width: 200px;
+			height: 300px;
+			border: 1px solid black;
+			background-color: white;
+		}
+	</style>
+</head>
+
+<body>
+	<h1> Texas Hold 'em Poker </h1>
+	<div id="circle-container">
+		<div id="pot"><br> Pot:200</div>
+		<div id="call"><br> Call: 20</div>
+		<div id="personal-money"><br>Personal:200</div>
+	</div>
+
+	<div class="card-container-opponent">
+		<div class="card-container-2">
+			<div class="card">Back of card</div>
+			<div class="card">Back of card</div>
+		</div>
+
+		<div class="card-container-2">
+			<div class="card">Back of card</div>
+			<div class="card">Back of card</div>
+		</div>
+
+		<div class="card-container-2">
+			<div class="card">Back of card</div>
+			<div class="card">Back of card</div>
+		</div>
+
+		<div class="card-container-2">
+			<div class="card">Back of card</div>
+			<div class="card">Back of card</div>
+		</div>
+
+		<div class="card-container-2">
+			<div class="card">Back of card</div>
+			<div class="card">Back of card</div>
+		</div>
+	</div>
+
+	<div id="card-container-5">
+		<div class="card" style="color: black;">7 of clubs</div>
+		<div class="card" style="color: red;">8 of hearts</div>
+		<div class="card" style="color: black;">Queen of spades</div>
+		<div class="card" style="color: red;">10 of hearts</div>
+		<div class="card" style="color: red;">9 of hearts</div>
+	</div>
+
+	<div class="card-container-2" style="padding-left: 37.5%; padding-bottom: 4%;">
+		<div class="card" style="color: red">6 of hearts</div>
+		<div class="card" style="color: red">5 of hearts</div>
+	</div>
+
+	<a href="" class="buttonone">Call/ Check</a>
+	<a href="" class="buttonone">Bet</a>
+	<a href="" class="buttonone">Fold</a>
+	<a href="" class="buttonone">All in</a>
+
+	<form>
+		<label for="Bet">Amount to bet (between 1 and max money):</label>
+		<input min="0" max="200">
+	</form>
+
+</body>
+
+</html>
